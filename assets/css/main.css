@@ -135,6 +135,16 @@
      margin-right: 2%;
 }
 
+@media screen and (max-width: 736px){
+	.half{
+		width: 100%;
+		text-align: center;
+	}
+	.right{
+		width: 100%;
+	}
+}
+
 .contact-form #submit{
   color: white;
   font-size: 20px;
@@ -266,6 +276,20 @@
   position: relative;
   width: 200px;
    }
+   @media screen and (max-width: 736px){
+	   .project-image {
+		  border-radius: 100%;
+			display: inline-flex;
+			flex: 0 0 150px;
+			height: 100px;
+			justify-content: center;
+			overflow: hidden;
+			position: relative;
+			width: 100px; 
+	   }
+	
+   }
+
    .project-image img {
    height: 100%;
    }
@@ -282,15 +306,23 @@
      transition: opacity 0.25s;
      z-index: 1;
 
-     background: linear-gradient(65deg, rgba(46,204,113,0.4), rgba(243,156,18,0.4));
-     color: #ffff;
+     background: linear-gradient(65deg, rgba(228, 238, 232, 0.4), rgba(9, 193, 218, 0.4));
+     color:black;
      font-size: 30px;
   }
   .img__overlay p{
   font-size: 30px;
-     font-weigtht: bold;
+     font-weight: bold;
      font-family: 'Montserrat';
      margin:0;
+  }
+  @media screen and (max-width: 736px){
+	  .img__overlay p{
+		font-size: 15px;
+		font-weight: bold;
+		font-family: 'Montserrat';
+		margin:0;
+	  }
   }
   .img__overlay:hover {
   opacity: 1;
@@ -411,6 +443,7 @@
 	.contents{
 		padding-top: 15px;
 		white-space: normal;
+		color: black;
 	}
 	@media screen and (max-width: 1280px){
 		.contents p{
@@ -3125,15 +3158,57 @@
 
 		.wrapper.style2 {
 			background-color: #d4d6db;
+			color: black;
 
 		}
 		.wrapper.style2 h1 {
 			font-size: 3em;
 			color: black;
 		}
+		.wrapper.style2 h2 {
+			color: black;
+		}
+		.wrapper.style2 strong {
+			color: black;
+		}
 		.wrapper.style2 hr {
 			border-color: rgba(0, 0, 0, 0.5);
 		}
+
+		.wrapper.style2 input[type="submit"],
+			.wrapper.style2 input[type="reset"],
+			.wrapper.style2 input[type="button"],
+			.wrapper.style2 button,
+			.wrapper.style2 .button {
+				border: inherit;
+				  outline: 0;
+				  border-radius: 8px;
+				  height: 3em;
+				  cursor: pointer;
+				  padding: 1em;
+				  margin-top: 1em;
+				  font-size: 1em;
+				  background-color:#7ea0d6;
+				  transition: opacity 300ms ease-out;
+
+				  
+			}
+
+				.wrapper.style2 input[type="submit"]:hover,
+				.wrapper.style2 input[type="reset"]:hover,
+				.wrapper.style2 input[type="button"]:hover,
+				.wrapper.style2 button:hover,
+				.wrapper.style2 .button:hover {
+					background-color: rgba(126, 214, 209, 0.75);
+				}
+
+				.wrapper.style2 input[type="submit"]:active,
+				.wrapper.style2 input[type="reset"]:active,
+				.wrapper.style2 input[type="button"]:active,
+				.wrapper.style2 button:active,
+				.wrapper.style2 .button:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
 
 
 		.wrapper.style3 {
