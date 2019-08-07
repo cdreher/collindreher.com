@@ -445,6 +445,9 @@
 		white-space: normal;
 		color: black;
 	}
+	.contents a {
+		text-decoration: underline;
+	}
 	@media screen and (max-width: 1280px){
 		.contents p{
 			display: block;
@@ -583,7 +586,7 @@
 	.label {
 	  color: white;
 	  text-shadow: 0px 0px 2px #cfd6dd;
-	  font-size: 24px;
+	  font-size: 16px;
 	}
 	.fill-html {
 	  animation: fill-html 0.5s ease-out 0s;
@@ -610,16 +613,6 @@
 	  animation-fill-mode: forwards;
 	  width: 0%;
 	}
-	.fill-xamarin {
-	  animation: fill-xamarin 0.5s ease-out 0s;
-	  animation-fill-mode: forwards;
-	  width: 0%;
-	}
-	.fill-xaml {
-	  animation: fill-xaml 0.5s ease-out 0s;
-	  animation-fill-mode: forwards;
-	  width: 0%;
-	}
 	.fill-java {
 	  animation: fill-java 0.5s ease-out 0s;
 	  animation-fill-mode: forwards;
@@ -635,10 +628,20 @@
 	  animation-fill-mode: forwards;
 	  width: 0%;
 	}
-	.fill-php {
-	  animation: fill-php 0.5s ease-out 0s;
-	  animation-fill-mode: forwards;
-	  width: 0%;
+	.fill-firebase {
+		animation: fill-firebase 0.5s ease-out 0s;
+		animation-fill-mode: forwards;
+		width: 0%;
+	}
+	.fill-mongo {
+		animation: fill-mongo 0.5s ease-out 0s;
+		animation-fill-mode: forwards;
+		width: 0%;
+	}
+	.fill-azure {
+		animation: fill-azure 0.5s ease-out 0s;
+		animation-fill-mode: forwards;
+		width: 0%;
 	}
 	.fill-sql {
 	  animation: fill-sql 0.5s ease-out 0s;
@@ -655,6 +658,21 @@
 	  animation-fill-mode: forwards;
 	  width: 0%;
 	}
+	.fill-react {
+		animation: fill-react 0.5s ease-out 0s;
+		animation-fill-mode: forwards;
+		width: 0%;
+	  }
+	  .fill-unity {
+		animation: fill-unity 0.5s ease-out 0s;
+		animation-fill-mode: forwards;
+		width: 0%;
+	  }
+	.fill-xamarin {
+		animation: fill-xamarin 0.5s ease-out 0s;
+		animation-fill-mode: forwards;
+		width: 0%;
+	  }
 	.fill-OS {
 	  animation: fill-OS 0.5s ease-out 0s;
 	  animation-fill-mode: forwards;
@@ -718,20 +736,12 @@
 		width: 60%;
 	  }
 	}
-	@keyframes fill-xaml {
-	  0% {
-		width: 0%;
-	  }
-	  100% {
-		width: 70%;
-	  }
-	}
 	@keyframes fill-java {
 	  0% {
 		width: 0%;
 	  }
 	  100% {
-		width: 95%;
+		width: 80%;
 	  }
 	}
 	@keyframes fill-c {
@@ -739,7 +749,7 @@
 		width: 0%;
 	  }
 	  100% {
-		width: 65%;
+		width: 85%;
 	  }
 	}
 	@keyframes fill-net {
@@ -750,20 +760,36 @@
 		width: 65%;
 	  }
 	}
-	@keyframes fill-php {
-	  0% {
-		width: 0%;
-	  }
-	  100% {
-		width: 45%;
-	  }
+	@keyframes fill-firebase {
+		0% {
+			width: 0%;
+		}
+		100% {
+			width: 80%;
+		}
+	}
+	@keyframes fill-azure {
+		0% {
+			width: 0%;
+		}
+		100% {
+			width: 45%;
+		}
+	}
+	@keyframes fill-mongo {
+		0% {
+			width: 0%;
+		}
+		100% {
+			width: 30%;
+		}
 	}
 	@keyframes fill-sql {
 	  0% {
 		width: 0%;
 	  }
 	  100% {
-		width: 50%;
+		width: 70%;
 	  }
 	}
 	@keyframes fill-iOS {
@@ -782,6 +808,22 @@
 		width: 60%;
 	  }
 	}
+	@keyframes fill-unity {
+		0% {
+		  width: 0%;
+		}
+		100% {
+		  width: 45%;
+		}
+	  }
+	  @keyframes fill-react {
+		0% {
+		  width: 0%;
+		}
+		100% {
+		  width: 50%;
+		}
+	  }
 	@keyframes fill-OS {
 	  0% {
 		width: 0%;
